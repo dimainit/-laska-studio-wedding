@@ -1,0 +1,11 @@
+.team_image {
+  width: 683px;
+  height: 390px;
+  border-radius: 5px;
+  position: relative;
+  left: 128px;
+  top: 88px;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=img.css.map */

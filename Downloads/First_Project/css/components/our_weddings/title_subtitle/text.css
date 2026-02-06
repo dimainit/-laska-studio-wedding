@@ -1,0 +1,24 @@
+.weddings_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 864px;
+  height: 46px;
+  margin: 0 auto;
+  gap: 20px;
+  padding-top: 133px;
+}
+
+.weddings_title {
+  font-size: 53px;
+  color: #BB9D8E;
+}
+
+.weddings_subtitle {
+  font-size: 19px;
+  color: #000000;
+  font-weight: lighter;
+  font-family: "Lato", serif !important;
+}
+
+/*# sourceMappingURL=text.css.map */

@@ -1,0 +1,18 @@
+@use "../../../base/mixins" as *;
+
+.our_weddings_wrapper {
+    @include flex-column;
+    height: 802px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 82.24%, #FFFFFF 100%),
+            linear-gradient(180deg, rgba(255, 255, 255, 0) 88.17%, #FFFFFF 100%),
+            #EFE8DD;
+
+}
+
+.weddings_images_block {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    padding-top: 212px;
+}

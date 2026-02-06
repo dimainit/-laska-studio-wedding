@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.team_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
+  font-size: 53px;
+  color: #BB9D8E;
+  font-family: Cormorant;
+  line-height: 65px;
+}

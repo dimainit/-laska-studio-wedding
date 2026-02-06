@@ -1,0 +1,8 @@
+@use "../../../../base/root" as *;
+
+.title_plan {
+    font-family: $font_fam_title_two;
+    font-size: $font_size_title_s;
+    font-weight: $font_weight_l;
+    padding-bottom: 20px;
+}

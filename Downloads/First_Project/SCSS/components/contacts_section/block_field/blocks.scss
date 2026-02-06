@@ -1,0 +1,45 @@
+@use "../../../base/root" as *;
+@use "../../../base/mixins" as *;
+
+.blocks_field {
+    display: flex;
+    gap: $gap_m;
+}
+
+.block {
+    @include flex-column;
+}
+
+.block_text_field {
+    @include flex-column;
+    padding-top: 7px;
+}
+
+.block input {
+    width: 333px;
+    height: 40px;
+    display: flex;
+    gap: $gap_m;
+    padding: 15px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    font-family: inherit;
+    background: white;
+} 
+
+
+textarea {
+    width: 687px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+
+
+label {
+    padding-bottom: 5px;
+    font-size: $font_size_subtitle;
+    font-weight: $font_weight_s;
+    font-family: $font_fam_subtitle;
+}
+

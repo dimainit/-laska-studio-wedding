@@ -1,0 +1,712 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.logo_header {
+  position: absolute;
+  left: 185px;
+}
+
+.nav_header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lato", serif !important;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.08);
+}
+
+.border_bottoms {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 20px);
+}
+
+.border_bot_one {
+  position: absolute;
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.border_bot_two {
+  position: absolute;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.8);
+  width: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.border_bot_three {
+  position: absolute;
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.6);
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.border_bot_four {
+  position: absolute;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.border_bot_five {
+  position: absolute;
+  border-bottom: 0.2px solid rgba(255, 255, 255, 0.2);
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 89px;
+  gap: 10px;
+  position: absolute;
+  top: 250px;
+  height: 357px;
+  box-sizing: border-box;
+  width: 950px;
+  left: 200px;
+  background: linear-gradient(180deg, #9A8477 0%, rgba(115, 115, 115, 0) 100%);
+  border-radius: 20px;
+}
+
+.hero_title {
+  height: 73px;
+  font-size: 60px;
+  font-family: "Cormorant", serif !important;
+  font-weight: 600;
+  line-height: auto;
+  color: #ffffff;
+}
+
+.hero_subtitle {
+  width: 595px;
+  height: 58px;
+  font-size: 18px;
+  font-family: "Lato", serif !important;
+  font-weight: 300;
+  color: #ffffff;
+  padding-top: 4px;
+}
+
+.hero_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 63px;
+  background-color: #ffffff;
+  color: #75422E;
+  padding: 8px 20px;
+  font-family: "Lato", serif !important;
+  font-size: 19px;
+  font-weight: bold;
+  border: 1px solid #75422E;
+  border-radius: 10px;
+  box-shadow: 6px 8px 30px rgba(0, 0, 0, 0.25);
+  margin-top: 40px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.hero_button:hover {
+  transform: scale(1.03);
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0.8) 80%, rgb(255, 255, 255) 100%);
+}
+
+.hero_img_bg {
+  position: relative;
+  height: 100vh;
+  background-image: url(/Images/header_prewiew.jpg);
+  background-size: cover;
+  background-position: 0% 30%;
+}
+
+.team_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 597px;
+  height: 275px;
+  background: rgba(239, 232, 221, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 27.5px 47.5px;
+  font-family: "Lato", serif !important;
+  font-weight: 300;
+  position: absolute;
+  top: 145px;
+  left: 571px;
+  z-index: 2;
+  font-size: 18px;
+}
+
+.team_image {
+  width: 683px;
+  height: 390px;
+  border-radius: 5px;
+  position: relative;
+  left: 128px;
+  top: 88px;
+  z-index: 1;
+}
+
+.team_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
+  font-size: 53px;
+  color: #BB9D8E;
+  font-family: "Cormorant", serif !important;
+  line-height: 65px;
+}
+
+.block_wrapper {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.our_team {
+  min-height: 800px;
+}
+
+.services_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
+  font-size: 53px;
+  color: #BB9D8E;
+  font-family: "Cormorant", serif !important;
+  line-height: 65px;
+}
+
+.services_subtitle {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+  width: 900px;
+  height: 69px;
+  font-family: "Lato", serif !important;
+  font-size: 19px;
+  color: #000000;
+  font-weight: 200;
+}
+
+.services_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+}
+
+.block_one, .block_two, .block_three {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: #A9978C;
+  border-radius: 5px;
+}
+
+.service_image {
+  display: block;
+  width: calc(100% + 2px);
+}
+
+.text_block {
+  background-color: #A9978C;
+  color: #ffffff;
+  font-family: Lato;
+  width: 333px;
+  height: 142px;
+  padding: 16px;
+  margin-top: -1.3px;
+}
+
+.title_block_slz {
+  font-size: 21px;
+  font-weight: 400;
+  width: 301px;
+  height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.subtitle_block_slz {
+  font-size: 16px;
+  font-family: "Lato", serif !important;
+  font-weight: lighter;
+}
+
+.services {
+  min-height: 800px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 92.14%, #FFFFFF 100%), linear-gradient(360deg, rgba(255, 255, 255, 0) 90.98%, #FFFFFF 100%), linear-gradient(0deg, #EFE8DD, #EFE8DD);
+}
+
+.wedding_planning_title {
+  font-family: "Cormorant", serif !important;
+  width: 1040px;
+  font-size: 53px;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 93px;
+  padding-bottom: 88px;
+}
+
+.weddings_wrapper {
+  background: linear-gradient(180deg, #9A8477 0%, #E7DFD4 100%);
+  border-radius: 20px 20px 0 0;
+  height: 800px;
+}
+
+.wedding_planning_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 333px);
+  grid-template-rows: repeat(2, 125px);
+  max-width: 1280px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 88px;
+}
+
+.block_plan {
+  position: relative;
+}
+
+.plan_img_bg {
+  position: absolute;
+  z-index: 0;
+  bottom: 78px;
+}
+
+.button_plan {
+  margin: 0 auto;
+}
+
+.button_pl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 63px;
+  background-color: #ffffff;
+  color: #75422E;
+  padding: 8px 20px;
+  font-family: "Lato", serif !important;
+  font-size: 19px;
+  font-weight: bold;
+  border: 1px solid #75422E;
+  border-radius: 10px;
+  box-shadow: 6px 8px 30px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.subtitle_plan {
+  font-family: "Lato", serif !important;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.title_plan {
+  font-family: "Lato", serif !important;
+  font-size: 21px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.wedding_planning_bg {
+  background: linear-gradient(180deg, #E7DFD4 0%, #ffffff 100%);
+  height: 200px;
+  width: 100%;
+}
+
+.wrapper_ref {
+  display: flex;
+  flex-direction: column;
+  width: 686px;
+  height: 1000px;
+  margin: 0 auto;
+  padding-top: 101px;
+}
+
+.text_ref {
+  text-align: center;
+}
+
+.title_ref {
+  font-family: "Cormorant", serif !important;
+  font-size: 53px;
+  color: #BB9D8E;
+  font-weight: 600;
+}
+
+.subtitle_ref {
+  font-family: "Lato", serif !important;
+  font-size: 19px;
+  font-weight: lighter;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.block_img_ref {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.comments {
+  width: 510px;
+  margin: 0 auto;
+}
+
+.title_comment {
+  font-size: 18px;
+  font-family: "Lato", serif !important;
+  font-weight: 600;
+  padding: 15px 0 15px 0;
+}
+
+.subtitle_comment {
+  font-size: 18px;
+  font-family: "Lato", serif !important;
+  font-weight: 200;
+}
+
+.weddings_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 864px;
+  height: 46px;
+  margin: 0 auto;
+  gap: 20px;
+  padding-top: 133px;
+}
+
+.weddings_title {
+  font-size: 53px;
+  color: #BB9D8E;
+}
+
+.weddings_subtitle {
+  font-size: 19px;
+  color: #000000;
+  font-weight: lighter;
+  font-family: "Lato", serif !important;
+}
+
+.our_weddings_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 802px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 82.24%, #FFFFFF 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 88.17%, #FFFFFF 100%), #EFE8DD;
+}
+
+.weddings_images_block {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  padding-top: 212px;
+}
+
+.weddings_left_block {
+  position: relative;
+  width: 68px;
+  height: 68px;
+}
+
+.weddings_right_block {
+  position: relative;
+  width: 68px;
+  height: 68px;
+}
+
+.title_contacts {
+  font-size: 53px;
+  font-family: "Cormorant", serif !important;
+  color: #BB9D8E;
+  padding-bottom: 93px;
+  padding: 163px 0 0 120px;
+}
+
+.block_contacts {
+  padding-top: 93px;
+  padding-left: 120px;
+}
+
+.contacts_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blocks_field {
+  display: flex;
+  gap: 20px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.block_text_field {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7px;
+}
+
+.block input {
+  width: 333px;
+  height: 40px;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  font-family: inherit;
+  background: white;
+}
+
+textarea {
+  width: 687px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+label {
+  padding-bottom: 5px;
+  font-size: 19px;
+  font-weight: 200;
+  font-family: "Lato", serif !important;
+}
+
+.button_submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 157px;
+  height: 63px;
+  background-color: #FFFFFF;
+  color: #75422E;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 19px;
+  font-family: "Lato", serif !important;
+  font-weight: bold;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.contacts_info {
+  display: flex;
+  flex-direction: column;
+  width: 333.46px;
+  height: 139px;
+  align-items: center;
+}
+
+.contacts_item {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  padding: 5px 0;
+}
+
+.icon {
+  margin-right: 15px;
+  width: 18px;
+}
+
+.contacts_icon {
+  display: flex;
+  gap: 35px;
+  width: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.icon_cont {
+  width: 20px;
+}
+
+.wrapper_contacts {
+  min-height: 830px;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 20;
+}
+
+.popup_window {
+  width: 360px;
+  max-width: calc(100% - 30px);
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 20px 18px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: popover-open 0.3s ease;
+}
+
+.popup_close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.title_popover {
+  color: #75422E;
+}
+
+.subtitle_popover {
+  color: #949494;
+  font-weight: lighter;
+  font-family: "Lato", serif !important;
+}
+
+@keyframes popover-open {
+  from {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.wrapper_footer {
+  min-height: 400px;
+  background-color: #B39589;
+}
+
+.block_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo_footer {
+  width: 157px;
+  height: 163px;
+  margin: 31px 0 12px 0;
+}
+
+.nav_footer {
+  display: flex;
+  gap: 20px;
+}
+
+.border_bottoms_two {
+  padding: 24px 0 44px 0;
+}
+
+.footer_copyright {
+  color: #ffffff;
+  font-family: "Lato", serif !important;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#services {
+  scroll-margin-top: -40px;
+}
+
+#reference {
+  scroll-margin-top: -90px;
+}
+
+#our_weddings {
+  scroll-margin-top: -50px;
+}
+
+#contact {
+  scroll-margin-top: -80px;
+}
+
+/*# sourceMappingURL=style.css.map */

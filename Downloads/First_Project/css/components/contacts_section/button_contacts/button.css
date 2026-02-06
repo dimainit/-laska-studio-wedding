@@ -1,0 +1,20 @@
+.button_submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 157px;
+  height: 63px;
+  background-color: #FFFFFF;
+  color: #75422E;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 19px;
+  font-family: "Lato", serif !important;
+  font-weight: bold;
+  gap: 40px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=button.css.map */

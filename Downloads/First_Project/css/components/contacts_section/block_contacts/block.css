@@ -1,0 +1,12 @@
+.block_contacts {
+  padding-top: 93px;
+  padding-left: 120px;
+}
+
+.contacts_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*# sourceMappingURL=block.css.map */

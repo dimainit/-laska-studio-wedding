@@ -1,0 +1,50 @@
+@use "../../../base/root" as *;
+@use "../../../base/mixins" as *;
+
+.services_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+}
+
+
+
+.block_one, .block_two, .block_three {
+    @include flex-column;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: #A9978C;
+    border-radius: 5px;
+}
+
+.service_image {
+    display: block;
+    width: calc(100% + 2px);
+}
+
+.text_block {
+    background-color: #A9978C;
+    color: $color_white;
+    font-family: Lato;
+    width: 333px;
+    height: 142px;
+    padding: 16px;
+    margin-top: -1.3px;
+}
+
+.title_block_slz {
+    font-size: $font_size_title_s;
+    font-weight: $font_weight_l;
+    width: 301px;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.subtitle_block_slz {
+    font-size: $font_size_subtitle_s;
+    font-family: $font_fam_subtitle;
+    font-weight: $font_weight_xs;
+}

@@ -1,0 +1,13 @@
+@use "../../../base/root" as *;
+@use "../../../base/mixins" as *;
+
+
+.team_title {
+    @include flex_row_center;
+    padding-top: 72px;
+    font-size: $font_size_title;
+    color: $color_title;
+    font-family: $font_fam_title;
+    line-height: 65px;
+}
+

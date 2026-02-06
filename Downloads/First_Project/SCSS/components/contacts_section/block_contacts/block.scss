@@ -1,0 +1,25 @@
+@use "../../../base/mixins" as *;
+
+.block_contacts {
+    padding-top: 93px;
+    padding-left: 120px;
+}
+
+.contacts_row {
+    @include flex-row;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

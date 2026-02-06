@@ -1,0 +1,26 @@
+.services_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
+  font-size: 53px;
+  color: #BB9D8E;
+  font-family: "Cormorant", serif !important;
+  line-height: 65px;
+}
+
+.services_subtitle {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+  width: 900px;
+  height: 69px;
+  font-family: "Lato", serif !important;
+  font-size: 19px;
+  color: #000000;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=title.css.map */

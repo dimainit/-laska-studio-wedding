@@ -1,0 +1,75 @@
+@use "../../../base/root" as *;
+@use "../../../base/mixins" as *;
+
+.hero_content {
+    @include flex-column;
+    padding: 27px 89px;
+    gap: $gap_xs;
+    position: $position_abs;
+    top: 250px;
+    height: 357px;
+    box-sizing: border-box;
+    width: 950px;
+    left: 200px;
+    background: linear-gradient(180deg, #9A8477 0%,rgba(115, 115, 115, 0) 100%);
+    border-radius: $border_radius_xl;
+}
+
+
+.hero_title {
+height: 73px;
+font-size: 60px;
+font-family: $font_fam_title;
+font-weight: $font_weight_xl;
+line-height: auto;
+color: $color_white;
+}
+
+.hero_subtitle {
+    width: 595px;
+    height: 58px;
+    font-size: 18px;
+    font-family: $font_fam_subtitle;
+    font-weight: $font_weight_m;
+    color: $color_white;
+    padding-top: 4px;
+}
+
+.hero_button {
+    @include flex_row_center;
+    width: 335px;
+    height: 63px;
+    background-color: #ffffff;
+    color:#75422E;
+    padding: 8px 20px;
+    font-family: $font_fam_button;
+    font-size: $font_size_subtitle;
+    font-weight: $font_weight_xxl;
+    border: 1px solid #75422E;
+    border-radius: $border_radius_m;
+    box-shadow: 6px 8px 30px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.hero_button:hover {
+    transform: scale(1.03);
+}
+
+
+
+.gradient {
+    position: $position_abs;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.2) 20%,
+                rgba(255, 255, 255, 0.4) 40%,
+                rgba(255, 255, 255, 0.6) 60%,
+                rgba(255, 255, 255, 0.8) 80%,
+                rgba(255, 255, 255, 1) 100%,)
+    }

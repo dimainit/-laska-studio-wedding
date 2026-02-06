@@ -1,0 +1,8 @@
+@use "../../../base/root" as *;
+
+
+.block_img_ref {
+    display: flex;
+    align-items: center;
+    gap: $gap_m;
+}

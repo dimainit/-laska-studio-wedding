@@ -1,0 +1,9 @@
+@use "../../../base/root" as *;
+
+.title_contacts {
+    font-size: $font_size_title;
+    font-family: $font_fam_title;
+    color: $color_title;
+    padding-bottom: 93px;
+    padding: 163px 0 0 120px;
+}

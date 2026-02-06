@@ -1,0 +1,11 @@
+@use "../../../base/root" as *;
+
+.team_image {
+width: 683px;
+height: 390px;
+border-radius: $border_radius_s;
+position: relative;
+left: 128px;
+top: 88px;
+z-index: 1;
+}

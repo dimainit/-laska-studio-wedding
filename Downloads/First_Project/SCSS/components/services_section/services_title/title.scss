@@ -1,0 +1,24 @@
+@use "../../../base/root" as *;
+@use "../../../base/mixins" as *;
+
+.services_title {
+    @include flex_row_center;
+    padding-top: 72px;
+    font-size: $font_size_title;
+    color: $color_title;
+    font-family: $font_fam_title;
+    line-height: 65px;
+}
+
+.services_subtitle {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 900px;
+    height: 69px;
+    font-family: $font_fam_subtitle;
+    font-size: $font_size_subtitle;
+    color: $color_black;
+    font-weight: $font_weight_s;
+}

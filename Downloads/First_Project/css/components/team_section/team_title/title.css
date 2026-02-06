@@ -1,0 +1,13 @@
+.team_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
+  font-size: 53px;
+  color: #BB9D8E;
+  font-family: "Cormorant", serif !important;
+  line-height: 65px;
+}
+
+/*# sourceMappingURL=title.css.map */
