@@ -11,6 +11,14 @@
   overflow: hidden;
   background-color: #A9978C;
   border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.block_one:hover,
+.block_two:hover,
+.block_three:hover {
+  transform: translateY(-5px);
 }
 
 .service_image {

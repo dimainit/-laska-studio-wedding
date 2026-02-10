@@ -16,3 +16,12 @@
     gap: 44px;
     padding-top: 212px;
 }
+
+.img_wedding {
+cursor: pointer;
+transition: transform 0.4s ease;
+}
+
+.img_wedding:hover {
+    transform: scale(1.03);
+}

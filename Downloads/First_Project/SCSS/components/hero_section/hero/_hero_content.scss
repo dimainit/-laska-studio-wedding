@@ -21,7 +21,6 @@ height: 73px;
 font-size: 60px;
 font-family: $font_fam_title;
 font-weight: $font_weight_xl;
-line-height: auto;
 color: $color_white;
 }
 
@@ -49,7 +48,7 @@ color: $color_white;
     border-radius: $border_radius_m;
     box-shadow: 6px 8px 30px rgba(0, 0, 0, 0.25);
     margin-top: 40px;
-    transition: all 0.5s ease;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
@@ -72,4 +71,5 @@ color: $color_white;
                 rgba(255, 255, 255, 0.6) 60%,
                 rgba(255, 255, 255, 0.8) 80%,
                 rgba(255, 255, 255, 1) 100%,)
-    }
+}
+

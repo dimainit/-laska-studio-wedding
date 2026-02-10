@@ -1,11 +1,25 @@
-@charset "UTF-8";
-.team_title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 72px;
-  font-size: 53px;
-  color: #BB9D8E;
-  font-family: Cormorant;
-  line-height: 65px;
+.title_plan {
+  font-family: "Lato", serif !important;
+  font-size: 21px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}fffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 93px;
+  padding-bottom: 88px;
+}  line-height: 65px;
+}
+
+.services_subtitle {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+  width: 900px;
+  height: 69px;
+  font-family: "Lato", serif !important;
+  font-size: 19px;
+  color: #000000;
+  font-weight: 200;
 }

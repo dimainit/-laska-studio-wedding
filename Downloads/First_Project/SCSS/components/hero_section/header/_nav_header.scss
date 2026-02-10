@@ -15,9 +15,9 @@ a {
     color: $color_white;
     font-family: $font_fam_subtitle;
     font-weight: $font_weight_m;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 a:hover {
-    transform: scale(1.08)
+    transform: scale(1.06)
 }

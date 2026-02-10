@@ -15,4 +15,9 @@
     font-weight: $font_weight_xxl;
     gap: $gap_3xl;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button_submit:hover {
+    transform: scale(1.03);
 }
