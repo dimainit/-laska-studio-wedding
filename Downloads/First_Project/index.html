@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Studio Laska</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,16 +16,18 @@
                                                           <!-- Section Hero -->
 
     <section id="menu" class="hero_img_bg">
-      <header>
-        <img class="logo_header" src="Images/Icon.svg/logo_laska.svg" alt="Laska Studio"
-        />
-        <div class="nav_header">
-          <a href="#team">Tým</a>
-          <a href="#services">Služby</a>
-          <a href="#reference">Reference</a>
-          <a href="#our_weddings">Naše svatby</a>
-          <a href="#contact">Kontakt</a>
-        </div>
+      
+      <header class="header">
+      <div class="header_container">
+    <img class="logo_header" src="Images/Icon.svg/logo_laska.svg" alt="Laska Studio" />
+    <div class="nav_header">
+      <a href="#team">Tým</a>
+      <a href="#services">Služby</a>
+      <a href="#reference">Reference</a>
+      <a href="#our_weddings">Naše svatby</a>
+      <a href="#contact">Kontakt</a>
+    </div>
+  </div>
         <div class="border_bottoms">
           <div class="border_bot_one"></div>
           <div class="border_bot_two"></div>
@@ -34,6 +36,32 @@
           <div class="border_bot_five"></div>
           <div class="border_bot_six"></div>
         </div>
+        <button class="burger" popovertarget="burger_menu" type="button">
+  <span class="burger_icon">
+    <img src="Images/Icon.svg/burger-menu-svgrepo-com.svg" alt="Menu">
+  </span>
+</button>
+
+<nav popover id="burger_menu" class="burger_menu">
+  <div class="burger_window">
+    <button
+      class="burger_close"
+      popovertarget="burger_menu"
+      popovertargetaction="hide"
+      type="button"
+    >✕</button>
+
+    <ul class="burger_list">
+      <li><a class="burger_link" href="#team">Tým</a></li>
+      <li><a class="burger_link" href="#services">Služby</a></li>
+      <li><a class="burger_link" href="#reference">Reference</a></li>
+      <li><a class="burger_link" href="#our_weddings">Naše svatby</a></li>
+      <li><a class="burger_link" href="#contact">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+
       </header>
       <div class="hero_content">
         <h1 class="hero_title">SVATBY S DUŠÍ A ELEGANCÍ</h1>
@@ -44,6 +72,7 @@
         <a href="#contact" class="hero_button">OBJEDNAT SVATEBNÍ SCHŮZKU</a>
       </div>
       <div class="gradient"></div>
+      
     </section>
 
 
@@ -55,22 +84,16 @@
       <div class="block_wrapper">
         <img class="team_image" src="Images/team.png" alt="tym" />
         <div class="team_block">
-          <span style="padding-bottom: 30px"
-            >Jsme team, který vnímá každý svatební den jako jedinečný příběh!
+          <p class="team_subtitle">Jsme team, který vnímá každý svatební den jako jedinečný příběh!
             Nasloucháme vaši představám a pečlivě je proměňujeme ve
-            skutečnost.</span
-          >
+            skutečnost.</p>
 
-          <span style="padding-bottom: 30px"
-            >Propsojujeme cit pro detail s promyšlenou organizací, protože
-            věříme, že svatba má odrážet vaši osobnost, emoce a styl.</span
-          >
+          <p class="team_subtitle">Propsojujeme cit pro detail s promyšlenou organizací, protože
+            věříme, že svatba má odrážet vaši osobnost, emoce a styl.</p>
 
-          <span
-            >Chceme, aby vznikla svatba, která máduši i osobitý design.
+          <p class="team_subtitle">Chceme, aby vznikla svatba, která máduši i osobitý design.
             Postaráme se o každý krok od prvního nápadu až po poslední tanec,
-            abyste si svůj den mohli naplno užít bez starostí.</span
-          >
+            abyste si svůj den mohli naplno užít bez starostí. </p>
         </div>
       </div>
     </section>

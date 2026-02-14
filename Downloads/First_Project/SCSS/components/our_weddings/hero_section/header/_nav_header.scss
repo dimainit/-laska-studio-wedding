@@ -1,0 +1,25 @@
+@use "../../../base/root"  as *;
+
+.nav_header {
+    position: $position_abs;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    display: flex;
+    gap: $gap_m;
+
+}
+
+a {
+    text-decoration: none;
+    color: $color_white;
+    font-family: $font_fam_subtitle;
+    font-weight: $font_weight_m;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    transform: scale(1.06)
+}

@@ -1,5 +1,8 @@
 .block_wrapper {
-  position: relative;
-  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1285px;
   margin: 0 auto;
+  position: relative;
 }

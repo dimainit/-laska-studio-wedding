@@ -1,11 +1,27 @@
 .team_image {
+  display: block;
   width: 683px;
-  height: 390px;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
-  position: relative;
-  left: 128px;
-  top: 88px;
-  z-index: 1;
+}
+
+@media (max-width: 1190px) {
+  .team_image {
+    max-width: 650px;
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .team_image {
+    max-width: 600px;
+  }
+}
+@media (max-width: 468px) {
+  .team_image {
+    max-width: 500px;
+  }
 }
 
 /*# sourceMappingURL=img.css.map */

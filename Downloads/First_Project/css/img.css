@@ -1,9 +1,6 @@
 .team_image {
   width: 683px;
-  height: 390px;
+  height: auto;
+  display: block;
   border-radius: 5px;
-  position: relative;
-  left: 128px;
-  top: 88px;
-  z-index: 1;
 }

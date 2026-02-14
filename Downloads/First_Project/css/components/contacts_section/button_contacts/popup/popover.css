@@ -42,7 +42,7 @@
 .subtitle_popover {
   color: #949494;
   font-weight: lighter;
-  font-family: "Lato", serif !important;
+  font-family: "Lato", serif;
 }
 
 @keyframes popover-open {
