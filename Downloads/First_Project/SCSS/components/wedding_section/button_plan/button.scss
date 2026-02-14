@@ -19,11 +19,29 @@
     border-radius: $border_radius_m;
     box-shadow: 6px 8px 30px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 80px;
     transition: transform 0.3s ease;
     cursor: pointer;
+    z-index: 20;
+    position: relative;
 }
 
 .button_pl:hover {
     transform: scale(1.03);
+}
+
+@media (max-width: 702px) {
+    .button_pl {
+    width: 250px;
+    height: 55px;
+    font-size: 13px;
+}
+}
+
+@media (max-width: 528px) {
+    .button_pl {
+        width: 230px;
+        height: 50px;
+        font-size: 12px;
+    }
 }

@@ -2,12 +2,43 @@
 
 .wedding_planning_title {
     font-family: $font_fam_title;
-    width: 1040px;
+    max-width: 1040px;
     font-size: $font_size_title;
     color: $color_white;
     margin: 0 auto;
     text-align: center;
     padding-top: 93px;
     padding-bottom: 88px;
+}
 
+
+@media (max-width: 1024px) {
+    .wedding_planning_title {
+        font-size: 46px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .wedding_planning_title {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wedding_planning_title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wedding_planning_title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 320px) {
+    .wedding_planning_title {
+        font-size: 32px;
+    }
 }

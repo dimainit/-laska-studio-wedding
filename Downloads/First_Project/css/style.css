@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -781,7 +782,7 @@ a:hover {
   }
   .services_subtitle {
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 320px) {
@@ -790,7 +791,7 @@ a:hover {
   }
   .services_subtitle {
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 }
 .services_wrapper {
@@ -852,12 +853,28 @@ a:hover {
   .block_one, .block_two, .block_three {
     width: 300px;
   }
+  .title_block_slz {
+    width: 300px;
+    font-size: 18px;
+  }
+  .subtitle_block_slz {
+    font-size: 14px;
+    width: 250px;
+  }
 }
 @media (min-width: 1009px) and (max-width: 1059px) {
   .block_one,
   .block_two,
   .block_three {
     width: 300px;
+  }
+  .title_block_slz {
+    width: 300px;
+    font-size: 18px;
+  }
+  .subtitle_block_slz {
+    font-size: 14px;
+    width: 250px;
   }
 }
 @media (min-width: 941px) and (max-width: 1009px) {
@@ -866,12 +883,28 @@ a:hover {
   .block_three {
     width: 260px;
   }
+  .title_block_slz {
+    width: 300px;
+    font-size: 18px;
+  }
+  .subtitle_block_slz {
+    font-size: 14px;
+    width: 250px;
+  }
 }
 @media (min-width: 872px) and (max-width: 940px) {
   .block_one,
   .block_two,
   .block_three {
     width: 260px;
+  }
+  .title_block_slz {
+    width: 300px;
+    font-size: 18px;
+  }
+  .subtitle_block_slz {
+    font-size: 14px;
+    width: 250px;
   }
 }
 @media (min-width: 750px) and (max-width: 872px) {
@@ -925,7 +958,7 @@ a:hover {
   .block_one,
   .block_two,
   .block_three {
-    width: 300px;
+    width: 280px;
   }
   .services_wrapper {
     display: flex;
@@ -934,7 +967,7 @@ a:hover {
     gap: 40px;
   }
   .title_block_slz {
-    width: 300px;
+    width: 270px;
     font-size: 18px;
   }
   .subtitle_block_slz {
@@ -956,13 +989,15 @@ a:hover {
   }
 }
 .services {
-  min-height: 800px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 92.14%, #FFFFFF 100%), linear-gradient(360deg, rgba(255, 255, 255, 0) 90.98%, #FFFFFF 100%), linear-gradient(0deg, #EFE8DD, #EFE8DD);
+  padding: 100px 0 150px 0;
+  /* нижний отступ больше */
+  background: linear-gradient(180deg, #ffffff 0%, #fef8f3 60%, #efe8dd 100%);
+  z-index: 1;
 }
 
 .wedding_planning_title {
   font-family: "Cormorant", serif;
-  width: 1040px;
+  max-width: 1040px;
   font-size: 53px;
   color: #ffffff;
   margin: 0 auto;
@@ -971,20 +1006,72 @@ a:hover {
   padding-bottom: 88px;
 }
 
+@media (max-width: 1024px) {
+  .wedding_planning_title {
+    font-size: 46px;
+  }
+}
+@media (max-width: 1024px) {
+  .wedding_planning_title {
+    font-size: 46px;
+  }
+}
+@media (max-width: 768px) {
+  .wedding_planning_title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 480px) {
+  .wedding_planning_title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 320px) {
+  .wedding_planning_title {
+    font-size: 32px;
+  }
+}
 .weddings_wrapper {
   background: linear-gradient(180deg, #9A8477 0%, #E7DFD4 100%);
   border-radius: 20px 20px 0 0;
-  height: 800px;
+  height: auto;
+  min-height: 0;
 }
 
+@media (max-width: 1190px) {
+  .wedding_planning {
+    margin-top: -60px;
+  }
+}
+@media (max-width: 1024px) {
+  .wedding_planning {
+    margin-top: -60px;
+  }
+}
+@media (max-width: 768px) {
+  .wedding_planning {
+    margin-top: -60px;
+  }
+}
+@media (max-width: 480px) {
+  .wedding_planning {
+    margin-top: -60px;
+  }
+}
+@media (max-width: 320px) {
+  .wedding_planning {
+    margin-top: -60px;
+  }
+}
 .wedding_planning_grid {
   display: grid;
-  grid-template-columns: repeat(3, 333px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 125px);
   max-width: 1280px;
   justify-content: center;
   margin: 0 auto;
   gap: 88px;
+  padding: 0 22px;
 }
 
 .block_plan {
@@ -997,6 +1084,33 @@ a:hover {
   bottom: 78px;
 }
 
+@media (max-width: 1024px) {
+  .wedding_planning_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding: 0 72px;
+  }
+}
+@media (max-width: 920px) {
+  .wedding_planning_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+    padding: 0 80px;
+  }
+}
+@media (max-width: 702px) {
+  .wedding_planning_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0 80px;
+  }
+}
+@media (max-width: 528px) {
+  .wedding_planning_grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
+  }
+}
 .button_plan {
   margin: 0 auto;
 }
@@ -1018,21 +1132,60 @@ a:hover {
   border-radius: 10px;
   box-shadow: 6px 8px 30px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 80px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  z-index: 20;
+  position: relative;
 }
 
 .button_pl:hover {
   transform: scale(1.03);
 }
 
+@media (max-width: 702px) {
+  .button_pl {
+    width: 250px;
+    height: 55px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 528px) {
+  .button_pl {
+    width: 230px;
+    height: 50px;
+    font-size: 12px;
+  }
+}
 .subtitle_plan {
   font-family: "Lato", serif;
   font-size: 16px;
   font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+  .subtitle_plan {
+    width: 400px;
+  }
+}
+@media (max-width: 920px) {
+  .subtitle_plan {
+    width: 300px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 702px) {
+  .subtitle_plan {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 528px) {
+  .subtitle_plan {
+    width: 320px;
+    font-size: 16px;
+  }
+}
 .title_plan {
   font-family: "Lato", serif;
   font-size: 21px;
@@ -1040,6 +1193,28 @@ a:hover {
   padding-bottom: 20px;
 }
 
+@media (max-width: 1024px) {
+  .title_plan {
+    font-size: 19px;
+  }
+}
+@media (max-width: 920px) {
+  .title_plan {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+}
+@media (max-width: 702px) {
+  .title_plan {
+    font-size: 17px;
+    padding-bottom: 8px;
+  }
+}
+@media (max-width: 528px) {
+  .title_plan {
+    font-size: 20px;
+  }
+}
 .wedding_planning_bg {
   background: linear-gradient(180deg, #E7DFD4 0%, #ffffff 100%);
   height: 200px;

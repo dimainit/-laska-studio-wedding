@@ -1,8 +1,11 @@
 @use "../../../base/root" as *;
 
 .services {
-    min-height: 800px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 92.14%, #FFFFFF 100%),
-            linear-gradient(360deg, rgba(255, 255, 255, 0) 90.98%, #FFFFFF 100%),
-            linear-gradient(0deg, #EFE8DD, #EFE8DD);
+    padding: 100px 0 150px 0;
+    /* нижний отступ больше */
+    background: linear-gradient(180deg,
+            #ffffff 0%,
+            #fef8f3 60%,
+            #efe8dd 100%);
+            z-index: 1
 }
