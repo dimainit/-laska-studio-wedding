@@ -19,7 +19,7 @@
   font-size: 18px;
 }
 
-@media (min-width: 1059px) and (max-width: 1140px) {
+@media (max-width: 1140px) {
   .team_block {
     position: absolute;
     left: 50%;
@@ -30,6 +30,20 @@
     z-index: 2;
     gap: 22px;
     padding: 24px 44px;
+  }
+}
+@media (max-width: 1024px) {
+  .team_block {
+    position: absolute;
+    left: 50%;
+    top: 285px;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    padding: 18px 16px;
+    z-index: 2;
+    gap: 18px;
+    padding: 20px 40px;
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
