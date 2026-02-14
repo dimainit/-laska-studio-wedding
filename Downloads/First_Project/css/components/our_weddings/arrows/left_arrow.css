@@ -1,8 +1,9 @@
 .weddings_left_block {
   position: relative;
-  width: 68px;
+  max-width: 68px;
   height: 68px;
+  flex-shrink: 0;
   cursor: pointer;
 }
 
-/*# sourceMappingURL=left_arrows.css.map */
+/*# sourceMappingURL=left_arrow.css.map */

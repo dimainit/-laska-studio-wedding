@@ -1,10 +1,9 @@
 .wrapper_ref {
   display: flex;
   flex-direction: column;
-  width: 686px;
-  height: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding-top: 101px;
+  padding: 101px 16px 0px 16px;
 }
 
 /*# sourceMappingURL=wrapper.css.map */

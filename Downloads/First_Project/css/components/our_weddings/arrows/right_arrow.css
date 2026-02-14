@@ -1,8 +1,8 @@
 .weddings_right_block {
   position: relative;
-  width: 68px;
+  max-width: 68px;
   height: 68px;
   cursor: pointer;
 }
 
-/*# sourceMappingURL=right_arrows.css.map */
+/*# sourceMappingURL=right_arrow.css.map */

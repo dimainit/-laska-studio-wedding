@@ -1224,10 +1224,9 @@ a:hover {
 .wrapper_ref {
   display: flex;
   flex-direction: column;
-  width: 686px;
-  height: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding-top: 101px;
+  padding: 101px 16px 0px 16px;
 }
 
 .text_ref {
@@ -1239,6 +1238,10 @@ a:hover {
   font-size: 53px;
   color: #BB9D8E;
   font-weight: 600;
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .subtitle_ref {
@@ -1247,16 +1250,144 @@ a:hover {
   font-weight: lighter;
   padding-top: 20px;
   padding-bottom: 80px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+  .title_ref {
+    font-size: 46px;
+  }
+}
+@media (max-width: 1024px) {
+  .title_ref {
+    font-size: 46px;
+  }
+  .subtitle_ref {
+    font-size: 17px;
+    padding: 16px 24px 65px 24px;
+  }
+}
+@media (max-width: 768px) {
+  .title_ref {
+    font-size: 42px;
+  }
+  .subtitle_ref {
+    font-size: 16px;
+    padding: 16px 24px 55px 24px;
+  }
+}
+@media (max-width: 480px) {
+  .title_ref {
+    font-size: 38px;
+  }
+}
+@media (max-width: 320px) {
+  .title_ref {
+    font-size: 32px;
+  }
+  .subtitle_ref {
+    font-size: 14px;
+    padding: 14px 24px 50px 24px;
+  }
+}
 .block_img_ref {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
 }
 
+.ref_img {
+  width: 100%;
+  max-width: 556px;
+}
+
+@media (max-width: 790px) {
+  .block_img_ref {
+    gap: 0;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+  }
+  .ref_img {
+    max-width: 500px;
+  }
+  .ref_right_block,
+  .ref_left_block {
+    width: 70px;
+    padding: 8px;
+  }
+}
+@media (max-width: 642px) {
+  .block_img_ref {
+    gap: 0;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+  }
+  .ref_img {
+    max-width: 400px;
+  }
+  .ref_right_block,
+  .ref_left_block {
+    width: 55px;
+    padding: 6px;
+  }
+}
+@media (max-width: 501px) {
+  .block_img_ref {
+    gap: 0;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+  }
+  .ref_img {
+    max-width: 320px;
+  }
+  .ref_right_block,
+  .ref_left_block {
+    width: 45px;
+    padding: 4px;
+  }
+}
+@media (max-width: 402px) {
+  .block_img_ref {
+    gap: 0;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+  }
+  .ref_img {
+    max-width: 250px;
+  }
+  .ref_right_block,
+  .ref_left_block {
+    width: 40px;
+    padding: 2px;
+  }
+}
+@media (max-width: 320px) {
+  .block_img_ref {
+    gap: 0;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+  }
+  .ref_img {
+    max-width: 200px;
+  }
+  .ref_right_block,
+  .ref_left_block {
+    width: 30px;
+    padding: 2px;
+  }
+}
 .comments {
-  width: 510px;
+  width: 556px;
   margin: 0 auto;
 }
 
@@ -1273,6 +1404,65 @@ a:hover {
   font-weight: 200;
 }
 
+@media (max-width: 790px) {
+  .comments {
+    width: 500px;
+  }
+  .title_comment {
+    padding: 14px 0px 10px 0px;
+    font-size: 17px;
+  }
+  .subtitle_comment {
+    font-size: 16px;
+  }
+}
+@media (max-width: 642px) {
+  .comments {
+    width: 400px;
+  }
+  .title_comment {
+    font-size: 16px;
+    padding: 12px 0px 8px 0px;
+  }
+  .subtitle_comment {
+    font-size: 14px;
+  }
+}
+@media (max-width: 501px) {
+  .comments {
+    width: 320px;
+  }
+  .title_comment {
+    font-size: 15px;
+    padding: 10px 0px 6px 0px;
+  }
+  .subtitle_comment {
+    font-size: 12px;
+  }
+}
+@media (max-width: 402px) {
+  .comments {
+    width: 250px;
+  }
+  .title_comment {
+    font-size: 14px;
+  }
+  .subtitle_comment {
+    font-size: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .comments {
+    width: 200px;
+  }
+  .title_comment {
+    padding: 8px 0px 4px 0px;
+    font-size: 13px;
+  }
+  .subtitle_comment {
+    font-size: 8px;
+  }
+}
 .weddings_text {
   display: flex;
   flex-direction: column;
@@ -1322,14 +1512,15 @@ a:hover {
 
 .weddings_left_block {
   position: relative;
-  width: 68px;
+  max-width: 68px;
   height: 68px;
+  flex-shrink: 0;
   cursor: pointer;
 }
 
 .weddings_right_block {
   position: relative;
-  width: 68px;
+  max-width: 68px;
   height: 68px;
   cursor: pointer;
 }
