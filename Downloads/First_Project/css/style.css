@@ -700,6 +700,8 @@ a:hover {
 @media (max-width: 480px) {
   .team_title {
     font-size: 38px;
+    margin: 22px;
+    padding: 0;
   }
 }
 @media (max-width: 320px) {
@@ -724,7 +726,8 @@ a:hover {
   }
 }
 .our_team {
-  min-height: 800px;
+  width: 100%;
+  padding: 50px 0 100px 0;
 }
 
 .services_title {
@@ -1226,7 +1229,7 @@ a:hover {
   flex-direction: column;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 101px 16px 0px 16px;
+  padding: 100px 16px 100px 16px;
 }
 
 .text_ref {
@@ -1258,11 +1261,6 @@ a:hover {
   .title_ref {
     font-size: 46px;
   }
-}
-@media (max-width: 1024px) {
-  .title_ref {
-    font-size: 46px;
-  }
   .subtitle_ref {
     font-size: 17px;
     padding: 16px 24px 65px 24px;
@@ -1273,7 +1271,7 @@ a:hover {
     font-size: 42px;
   }
   .subtitle_ref {
-    font-size: 16px;
+    font-size: 14px;
     padding: 16px 24px 55px 24px;
   }
 }
@@ -1284,10 +1282,10 @@ a:hover {
 }
 @media (max-width: 320px) {
   .title_ref {
-    font-size: 32px;
+    font-size: 30px;
   }
   .subtitle_ref {
-    font-size: 14px;
+    font-size: 12px;
     padding: 14px 24px 50px 24px;
   }
 }
@@ -1467,7 +1465,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 864px;
+  max-width: 864px;
+  width: 100%;
   height: 46px;
   margin: 0 auto;
   gap: 20px;
@@ -1486,10 +1485,47 @@ a:hover {
   font-family: "Lato", serif;
 }
 
+@media (max-width: 1024px) {
+  .weddings_title {
+    font-size: 46px;
+  }
+  .weddings_subtitle {
+    font-size: 18px;
+    padding: 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .weddings_title {
+    font-size: 42px;
+  }
+  .weddings_subtitle {
+    font-size: 16px;
+    padding: 0 24px;
+  }
+}
+@media (max-width: 480px) {
+  .weddings_title {
+    font-size: 38px;
+  }
+  .weddings_subtitle {
+    font-size: 14px;
+    padding: 0 24px;
+  }
+}
+@media (max-width: 320px) {
+  .weddings_title {
+    font-size: 30px;
+  }
+  .weddings_subtitle {
+    font-size: 12px;
+    padding: 0 24px;
+  }
+}
 .our_weddings_wrapper {
   display: flex;
   flex-direction: column;
-  height: 802px;
+  width: 100%;
+  padding: 0px 0 100px 0;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 82.24%, #FFFFFF 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 88.17%, #FFFFFF 100%), #EFE8DD;
 }
 
@@ -1497,11 +1533,16 @@ a:hover {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 44px;
   padding-top: 212px;
 }
 
 .img_wedding {
+  height: 270px;
+  max-width: 100%;
+  object-fit: cover;
+  min-width: 0;
   cursor: pointer;
   transition: transform 0.4s ease;
 }
@@ -1510,6 +1551,82 @@ a:hover {
   transform: scale(1.03);
 }
 
+@media (max-width: 1190px) {
+  .weddings_images_block {
+    gap: 38px;
+  }
+  .img_wedding {
+    height: 250px;
+    flex: 1;
+    min-width: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .weddings_images_block {
+    gap: 32px;
+  }
+  .img_wedding {
+    height: 230px;
+    flex: 1;
+    min-width: 0;
+  }
+}
+@media (max-width: 768px) {
+  .weddings_images_block {
+    flex-direction: column;
+    padding-top: 170px;
+  }
+  .img_wedding {
+    min-width: 0;
+    width: 100%;
+    min-width: 0;
+    height: 200px;
+  }
+  .img_wedding_imp {
+    min-width: 0;
+    width: 100%;
+    min-width: 0;
+    height: 200px;
+    object-fit: cover;
+  }
+  .weddings_left_block,
+  .weddings_right_block {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .weddings_images_block {
+    flex-direction: column;
+    padding-top: 170px;
+  }
+  .img_wedding {
+    min-width: 0;
+    width: 100%;
+    min-width: 0;
+    height: 150px;
+  }
+  .weddings_left_block,
+  .weddings_right_block {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .weddings_images_block {
+    flex-direction: column;
+    padding-top: 200px;
+  }
+  .img_wedding {
+    min-width: 0;
+    width: 100%;
+    min-width: 0;
+    height: 150px;
+    padding: 0px 20px;
+  }
+  .weddings_left_block,
+  .weddings_right_block {
+    display: none;
+  }
+}
 .weddings_left_block {
   position: relative;
   max-width: 68px;

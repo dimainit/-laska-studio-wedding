@@ -27,11 +27,6 @@
   .title_ref {
     font-size: 46px;
   }
-}
-@media (max-width: 1024px) {
-  .title_ref {
-    font-size: 46px;
-  }
   .subtitle_ref {
     font-size: 17px;
     padding: 16px 24px 65px 24px;
@@ -42,7 +37,7 @@
     font-size: 42px;
   }
   .subtitle_ref {
-    font-size: 16px;
+    font-size: 14px;
     padding: 16px 24px 55px 24px;
   }
 }
@@ -53,10 +48,10 @@
 }
 @media (max-width: 320px) {
   .title_ref {
-    font-size: 32px;
+    font-size: 30px;
   }
   .subtitle_ref {
-    font-size: 14px;
+    font-size: 12px;
     padding: 14px 24px 50px 24px;
   }
 }
