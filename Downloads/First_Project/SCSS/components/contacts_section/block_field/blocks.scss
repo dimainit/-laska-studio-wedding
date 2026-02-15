@@ -4,19 +4,27 @@
 .blocks_field {
     display: flex;
     gap: $gap_m;
+    max-width: 687px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .block {
     @include flex-column;
+    flex: 1;
+    min-width: 0;
+
 }
 
 .block_text_field {
     @include flex-column;
     padding-top: 7px;
+    max-width: 687px;
+    width: 100%;
 }
 
 .block input {
-    width: 333px;
+    width: 100%;
     height: 40px;
     display: flex;
     gap: $gap_m;
@@ -47,3 +55,25 @@ label {
     font-family: $font_fam_subtitle;
 }
 
+
+@media (max-width: 1190px) {
+    .blocks_field {
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .blocks_field {
+        width: 100%;    
+    }
+
+    textarea{
+        max-width: 687px;
+        width: 100%;
+    }
+
+    label {
+        font-size: 17px;
+    }
+}

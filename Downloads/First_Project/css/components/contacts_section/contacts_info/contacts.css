@@ -31,4 +31,30 @@
   cursor: pointer;
 }
 
+.map_section {
+  padding-right: 120px;
+}
+
+@media (max-width: 768px) {
+  .map_section iframe {
+    width: 260px;
+    height: 260px;
+  }
+  .map_section {
+    padding-right: 0;
+  }
+  .contacts_info {
+    max-width: 200px;
+  }
+}
+@media (max-width: 532px) {
+  .map_section iframe {
+    width: 200px;
+    height: 200px;
+  }
+  .map_section {
+    padding-right: 0;
+  }
+}
+
 /*# sourceMappingURL=contacts.css.map */

@@ -48,10 +48,10 @@
 }
 @media (max-width: 320px) {
   .title_ref {
-    font-size: 30px;
+    font-size: 32px;
   }
   .subtitle_ref {
-    font-size: 12px;
+    font-size: 14px;
     padding: 14px 24px 50px 24px;
   }
 }

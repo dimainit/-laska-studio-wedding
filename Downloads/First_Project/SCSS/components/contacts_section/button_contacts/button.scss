@@ -21,3 +21,11 @@
 .button_submit:hover {
     transform: scale(1.03);
 }
+
+@media (max-width: 768px) {
+    .button_submit {
+        width: 145px;
+        height: 55px;
+        font-size: 17px;
+    }
+}
